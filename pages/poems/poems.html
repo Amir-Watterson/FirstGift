@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница со стихами</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+   body {
+  background-color: #FFC0CB; /* Цвет фона */
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; /* Шрифт */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      padding: 20px;
+      background-color: #FF8B8B;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease;
+      margin-bottom: 20px; /* Добавлен отступ снизу между блоками */
+    }
+    .poems, .author-info {
+      width: 100%;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #000000; /* Цвет заголовка */
+      text-align: center;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333333; /* Цвет текста */
+      text-align: center;
+    }
+    .author-info {
+      margin-top: 20px;
+    }
+    .button {
+      background-color: #FF69B4; /* яркий розовый цвет фона кнопок */
+      color: #FFFFFF; /* белый цвет текста кнопок */
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 10px; 
+      outline: none; 
+      transition: background-color 0.3s ease; 
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+      text-decoration: none;
+      align-self: center; /* выравниваем по центру */
+      margin-top: 20px; /* добавляем отступ сверху */
+    }
+    .button:hover {
+      background-color: #FF1493; 
+      transform: translateY(-2px); 
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 560px) {
+      .container {
+        width: 90%;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+
+    /* Анимация появления */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="poems">
+      <h1>Мой первый стих: </h1>
+      <p>
+        Полюбил я тебя ещё в декабре<br>
+Влюбился в твой внутренний мир я тогда <br><br>
+Ты как яркий луч солнца<br>
+Освещаешь тёмный мой путь <br><br>
+Люблю я тебя<br>
+Ты это не забудь
+      </p>
+    </div>
+    <div class="poems">
+        <h1>Хотел помочь тебе: </h1>
+        <p>
+          Ты солнце моё,  <br>
+Любовь ты моя,  <br>
+Ты как алый цветочек,  <br>
+В тумане просторном.  <br>
+
+Спасаешь меня  <br>
+От бедств страданий. <br> 
+Ты прекрасна, как роза,  <br>
+Добра ты как ангел.  <br>
+
+И в силах ты пройти  <br>
+Все эти преграды.  <br>
+Ты помни всегда,  <br>
+Что я рядом с тобой. <br> 
+
+Ты помни всегда, что <br> 
+Люблю я тебя.
+        </p>
+      </div>
+      <div class="poems">
+        <h1>На 14: </h1>
+        <p>
+          Сегоднешний день, так прекрасен тобой<br>
+          Сегоднешний день, светит так ярко тобой<br>
+          Давай мы забудем все ссоры и обиды<br>
+          Давай же вспомним, как мы были прекрасны<br>
+          Помнишь ли ты, как тебе я в любви признавался?<br>
+          Помнишь ли ты, свое первое признание в любви?<br>
+          Помнишь ли ты, те теплые дни декабря?<br>
+          Когда мы целыми днями были вместе<br>
+          Мое сердце тогда, исцелить смогла только ты<br>
+          Стихи свои, посветить для тебя я хочу<br>
+          Весь этот мир отдать для тебя я готов<br>
+          Передать в своих строчках я хочу лишь одно<br>
+          Чтоб ты помнила и знала всегда<br>
+          Как сильно люблю я тебя<br>
+
+        </p>
+      </div>
+    <div class="author-info">
+      <h1>Автор: Амир</h1>
+      <p>Причина написания стихов: Благодаря стихам я выражаю свою любовь к тебе.</p>
+      <p>Еще одна цифра от пароля - <b>9</b></p>
+    </div>
+    <a href="./second_page.html" class="button">На главную страницу</a> <!-- Добавлена кнопка для перехода -->
+  </div>
+</body>
+</html>

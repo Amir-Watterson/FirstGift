@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подарок</title>
+  <style>
+    body {
+      background-color: #ff6c6c; /* Цвет фона */
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif; /* Шрифт */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      background-size: 400% 400%; /* Увеличиваем размер фона */
+      animation: gradientBG 15s ease infinite; /* Анимация циклического изменения цвета фона */
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #ffffff; 
+      text-align: center;
+    }
+
+    .audio-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    audio {
+      margin-bottom: 10px;
+      background-color: #ffffff;
+      border: 2px solid #ff6c6c;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    p {
+      font-size: 14px;
+      color: #ffffff; 
+      margin: 0;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #ffffff;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .social-link img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Адаптация для устройств с шириной от 300px до 560px */
+    @media screen and (max-width: 560px) {
+      h1 {
+        font-size: 18px;
+      }
+      
+      p {
+        font-size: 12px;
+      }
+
+      .social-link {
+        font-size: 12px;
+      }
+
+      .social-link img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Ты дошла до этого<br> Поздравляю</h1>
+
+  <div class="audio-container">
+    <audio controls src="/music/1.aac"></audio>
+    <p>Я тебя люблю</p>
+  </div>
+
+  <div class="audio-container">
+    <audio controls src="/music/2.aac"></audio>
+    <p> Если честно я этот текст заранее не готовил, я просто сейчас говорю , для этого я специально сделал меню, не меньше конечно, там внизу всё написано, текст, мало ли ты там чего нибудь не поймёшь, на всякий случай я решил туда записать текст</p>
+  </div>
+
+  <div class="audio-container">
+    <audio controls src="/music/3.aac"></audio>
+    <p>В целом что я хочу сказать тебе, я готовил этот сайт, там ещё что то есть ты это увидишь, сейчас не могу это сказать, хотя толку там, я учился рисовать, написал стих да, в принципе это всё, понимаешь, это не, ну как бы сказать, я не каждому второму делаю это, да и делать не было некому на 14 февраля, это первый раз это сайт я делаю, стихи тоже в этом году начал сочинять для тебя, конечно же рисовать учился, да не спал по ночам несколько часов, приходилось вставать раньше, просто хотел как нибудь помочь, ну не то чтобы помочь обрадовать что ли, ну типа того</p>
+  </div>
+
+  <div class="audio-container">
+    <audio controls src="/music/4.aac"></audio>
+    <p>Я ещё помню ты говорила что этот день для тебя особенный, 14 февраля, я это учел по той причине сильно так подготовиться, но начал поздно по той причине не всё в у меня идеально к сожалению, но из за того что ты сказал что этот день для тебя особенный я решил много чего сделать но как сама видишь, не всё удалось, не всё пошло так как я хотел, была неудача, да и с тобой ситуация, сама знаешь что произошло в субботу имею ввиду</p>
+  </div>
+
+  <div class="audio-container">
+    <audio controls src="/music/6.aac"></audio>
+    <p>Да и ты пожалуйста пойми меня правильно, я тебя люблю, многое для тебя хотел сделать, готов даже сейчас сделать, к сожалению не всё я могу делать отлично, такой уж человек , я думаю ты как нибудь то и оценишь это, может понравиться а может и не понравиться,но для меня это тоже был опыт как бы в програмирование и учёбе, тому подобное, в целом что я могу ещё сказать про тебя, да ты для меня дорога ценна, я не хочу тебя потерять, и то что произошло в субботу меня очень сильно удивляет, я до сих пор в шоке от этих событий, да это всё что я могу сказать, к сожалению, во  в тексте когда я пишу тебе, в телеграме, это в разы легче, но записывать голосовые сообщения или сказать это в лицо, это будет для меня что то сложное, ну не знаю, ну не могу я так говорить, я стесняюсь, да реально я стесняюсь, к сожалению я такой парень, ну не знаю что я ещё могу сказать, да на этом в принципе на этом закончу, честно идей не так уж много, да и само состояние не из самых лучших что нибудь новое придумывать, просто знай что ты мне нравишься, да</p>
+  </div>
+
+  <a href="https://t.me/new24qwerty" class="social-link">
+    <img src="https://cdn.icon-icons.com/icons2/2148/PNG/512/telegram_icon_131945.png" alt="Instagram">
+    Напиши мне в телеграм
+  </a>
+</body>
+</html>
