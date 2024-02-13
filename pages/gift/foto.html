@@ -30,6 +30,63 @@
       color: #333;
       margin-bottom: 20px;
     }
+     .social-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #ffffff;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .social-link img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Адаптация для устройств с шириной от 300px до 560px */
+    @media screen and (max-width: 560px) {
+      h1 {
+        font-size: 18px;
+      }
+      
+      p {
+        font-size: 12px;
+      }
+
+      .social-link {
+        font-size: 12px;
+      }
+
+      .social-link img {
+        width: 20px;
+        height: 20px;
+      }
+    }
   </style>
 </head>
 <body>
