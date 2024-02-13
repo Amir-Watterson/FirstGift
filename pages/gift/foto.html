@@ -6,34 +6,33 @@
   <title>Photo Gallery</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-     body {
-  background-color: #FFC0CB; /* Цвет фона */
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif; /* Шрифт */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-}
+    body {
+      background-color: #F9E4E6; /* Нежный розовый */
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif; /* Шрифт */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+    }
     
     .photo-container {
-      margin-bottom: 20px;
+      margin-bottom: 40px; /* Увеличиваем расстояние между фотографиями */
     }
 
     .photo {
       max-width: 100%;
       height: auto;
-      border-radius: 10px;
-      border: 2px solid #FF69B4; /* Рамка */
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 20px; /* Увеличиваем радиус скругления углов */
+      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1); /* Нежная тень */
     }
     
     .description {
       text-align: center;
       font-size: 18px;
       color: #333;
-      margin-bottom: 20px;
+      margin-top: 20px; /* Увеличиваем расстояние между фотографией и описанием */
     }
     
     .social-link {
@@ -41,13 +40,13 @@
       align-items: center;
       text-decoration: none;
       color: #ffffff;
-      margin-top: 20px;
-      font-size: 14px;
-      background-color: #FF69B4;
-      padding: 10px 20px;
-      border-radius: 10px;
+      margin-top: 40px; /* Увеличиваем расстояние между описанием и ссылкой */
+      font-size: 16px;
+      background-color: #FF69B4; /* Розовый */
+      padding: 15px 30px; /* Увеличиваем отступы внутри ссылки */
+      border-radius: 30px; /* Увеличиваем радиус скругления углов */
       transition: background-color 0.3s ease;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1); /* Нежная тень */
     }
 
     .social-link img {
@@ -57,7 +56,7 @@
     }
 
     .social-link:hover {
-      background-color: #FF1493;
+      background-color: #FF1493; /* Более яркий розовый при наведении */
     }
 
     @keyframes fadeIn {
@@ -90,12 +89,12 @@
       }
       
       p {
-        font-size: 12px;
+        font-size: 14px; /* Увеличиваем размер шрифта */
       }
 
       .social-link {
-        font-size: 12px;
-        padding: 8px 16px;
+        font-size: 14px;
+        padding: 10px 20px; /* Уменьшаем отступы внутри ссылки */
       }
 
       .social-link img {
@@ -155,7 +154,8 @@
       <p style="font-style: italic;">Юез коментариев...</p>
     </div>
   </div>
-   <a href="https://t.me/new24qwerty" class="social-link">
+  <!-- Добавьте еще три блока с фотографиями и описаниями по аналогии -->
+  <a href="https://t.me/new24qwerty" class="social-link">
     <img src="https://cdn.icon-icons.com/icons2/2148/PNG/512/telegram_icon_131945.png" alt="Instagram">
     Напиши мне в телеграм
   </a>
